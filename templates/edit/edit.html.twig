@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Profile{% endblock %}
+
+{% block body %}
+    <h1>Edit Profile</h1>
+
+    {{ form_start(profileForm) }}
+    	{{ form_row(profileForm.email)}}
+        {{ form_row(profileForm.username) }}
+        {{ form_row(profileForm.firstName) }}
+        {{ form_row(profileForm.lastName) }}
+
+        <button class="btn btn-light">Update</button>
+    {{ form_end(profileForm) }}
+{% endblock %}

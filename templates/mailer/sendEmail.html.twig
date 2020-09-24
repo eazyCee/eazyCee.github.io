@@ -1,0 +1,17 @@
+<img src="{{ email.image('@images/logo.png') }}" alt="Logo">
+
+<h1>Welcome!</h1>
+<p>
+    You signed up with the following email:
+</p>
+<p>
+    <code>{{ email.to[0].address }}</code>
+</p>
+<p class="text-success"><center>
+Please click the link below to verify your email address.
+</center>
+</p>
+<p> <center> <a href='dev2020.gipe/verify/{{ user.token }}'>Click Here</a></center> <p>
+<p>
+    Please complete your profile until {{ expiration_date|date('F jS') }} !
+</p>

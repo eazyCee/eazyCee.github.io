@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block body %}
+<h1> Profile </h1>
+	<table id="users" class="table table-striped">
+		<tbody>
+					<tr>
+						<th>Created At</th><td>{{ user.getCreated()|date("d/m/Y") }}</td>
+					</tr>				
+					<tr>
+						<th>Id</th><td>{{ user.id }}</td>
+					</tr>
+					<tr>
+						<th>Prename</th><td>{{ user.lastName }}</td>
+					</tr>
+					<tr>
+						<th>Name</th><td>{{ user.firstName }}</td>
+					</tr>
+					<tr>
+						<th>Email</th><td>{{ user.email }}</td>
+					</tr>
+					<tr>
+						<th>Password</th><td>{{ user.password }}</td>
+					</tr>
+					<tr>
+						<th>Roles</th><td>{% for role in user.roles %}
+							{{role}} &nbsp;
+							{% endfor %}</td>
+					</tr>
+					<tr>
+						<th>Updated At</th><td>{{ user.getUpdated()|date("d/m/Y") }}</td>
+					</tr>	
+
+	</tbody>
+</table>
+<div class="position-absolute">
+<a href="/" class="btn btn-primary btn-lg"> Go Back</a></div>
+{% endblock %}

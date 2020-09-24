@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Hi friend{% endblock %}</title>
+        <link rel = 'stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+        {% block stylesheets %}
+
+        .parallax {
+  /* The image used */
+  background-image: url('{{asset('media/pictures/background.jpg')}}');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        {% endblock %}
+    </head>
+<div class="parallax">
+    {% block header %}
+        {% include'layout/nav.html.twig' %}
+    {% endblock %}
+    <body>
+         <div class="parallax">
+    <div class = "container" >
+
+        {% block body %}{% endblock %}
+    </div>
+</div>
+    </body>
+
+{% block footer %}
+    {% include'layout/footer.html.twig' %}
+    {% block javascripts %}{% endblock %}
+{% endblock %}
+</html>
