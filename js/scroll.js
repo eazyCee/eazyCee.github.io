@@ -1,3 +1,11 @@
+window.addEventListener('scroll', ()=>{
+	const scrolled=window.scrollY;
+
+	console.log(scrolled);
+});
+
+
+
 $(document).ready(function (){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
@@ -9,14 +17,14 @@ $(document).ready(function (){
             $("nav").removeClass("navColor");
             $("nav").addClass("navTransparent");
         }
-    })
-     $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if(scroll > 100){
-            $("highest").removeClass("imgTransparent");
+
+        if(scroll > 580){
+            $("projects-container div").removeClass("bgcolor1");
+            $("projects-container div").addClass("bgcolor");           
         }
         else{
-            $("nav").addClass("imgTransparent");
+            $("projects-container div").removeClass("bgcolor");
+            $("projects-container div").addClass("bgcolor1");
         }
     })
     $(document).on('click', 'a[href^="#"]', function (event) {
