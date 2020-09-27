@@ -165,7 +165,7 @@ section.san-francisco {
 
 .whitespace{
   width: 100%;
-  height: 100vh;
+  height: 10vh;
 }
 
 .content{
@@ -188,9 +188,11 @@ section.san-francisco {
   display: block;
   width: 100%;
   height: auto;
+  transition:.5 ease;
+  backface-visibility: hidden;
 }
 
-.overlay {
+/*.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -202,22 +204,33 @@ section.san-francisco {
   transition: .5s ease;
   background-color: #FFFFFF;
 }
-
-.container:hover .overlay {
-  opacity: 0.6;
-}
-
-.text {
-  background-color: #FFFFFF;
-  color: black;
-  font-size: 20px;
+*/
+.middle {
+  transition: .5s ease;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.projects-container-box1:hover .image {
+  opacity: 0.5;
+}
+
+.projects-container-box1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media (min-width: 768px){
@@ -388,10 +401,16 @@ section.san-francisco {
 
 .aboutme-container-box1{
   width:30%%;
+  background-color: black;
+}
+
+.aboutme-container-box1 h1{
+  color:white;
 }
 
 .aboutme-container-box2{
   width:100%;
+  border: 2px solid black;
 }
 
 projects-container{
@@ -400,10 +419,16 @@ projects-container{
 }
 
 projects-container div{
-  padding:10px;
+  flex-direction: column;
+  padding:10vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .projects-container-box1{
+  position:relative;
     width:100%;
 }
 
@@ -411,7 +436,9 @@ projects-container div{
     width:100%;
 }
 
-
+projects-container p{
+  text-align: justify;
+}
 
 nav {
   position: fixed;
