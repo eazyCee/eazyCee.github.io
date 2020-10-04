@@ -4,12 +4,124 @@
 
 
 html, body {
+  display:block;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   background: #fff;
 }
+
+/* game*/
+.flap{
+  display:flex;
+}
+
+/*.flap div{
+  align-content: center;
+  align-items: center;
+}*/
+
+.button{
+  margin-top: 100px;
+  margin-left: 110px;
+   background-color: green;
+   text-align: center;
+  font-size: 50px;
+  z-index: +10;
+  position: absolute;
+}
+
+.pixelbg{
+  max-width: 100%;
+  background: url(media/gamebg.png);
+}
+
+
+.game-container{
+  width:500px;
+  height:730px;
+  position: absolute;
+}
+
+.borderLeft{
+  width:60px;
+  height:730px;
+  position: absolute;
+  background-color: white;
+  z-index: +3;
+}
+
+.back-arrow  {
+        display: none;
+    }
+
+.gameText{
+  text-align: center;
+  top: 50px;
+  left: 250px;
+  right: 250px;
+  font-size: 50px;
+  z-index: +3;
+  position: absolute;
+  background color: green;
+}
+.borderRight{
+  width:60px;
+  height:730px;
+  position: absolute;
+  background-color: white;
+  z-index: +3;
+  left: 580px;
+}
+
+.borderTop{
+  width:660px;
+  height:50px;
+  position:absolute;
+  background-color: white;
+  z-index: +2;
+  top:-50px;
+}
+
+.sky{
+  background: url(media/fb-game-background.png);
+  width: 500px;
+  height:580px;
+  position: absolute;
+}
+
+.ground{
+  background: url(media/bottom-background.png);
+  width: 500px;
+  height: 150px;
+  position:absolute;
+  top:580px;
+  z-index: +1;
+}
+
+.bird{
+  background: url(media/flappy-bird.png);
+  position: absolute;
+  width:60px;
+  height:45px;
+}
+
+.obstacle{
+  background: url(media/flappybird-pipe.png);
+  width: 60px;
+  height: 300px;
+  position: absolute;
+}
+
+.topObstacle{
+  background: url(media/flappybird-pipe.png);
+  transform: rotate(180deg);
+  width: 60px;
+  height: 300px;
+  position: absolute;
+}
+/* game*/
 
 .imgTransparent {
   -webkit-transition-duration: 0.5s;
@@ -262,7 +374,7 @@ section.san-francisco {
     font-family:sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1em;
     -webkit-text-fill-color: white;
     z-index: 1;
     text-shadow: 1px 1px 25px black;
@@ -445,6 +557,7 @@ nav {
   left: 0;
   top: 0;
   width: 100%;
+  z-index: +5;
 }
 nav > p {
   color:white;

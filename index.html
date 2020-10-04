@@ -65,21 +65,21 @@
 			<p><a href="#top">Cliff Tangel</a></p>
 			<ul>
 				<li><a href="#about">About Me</a></li>
-				<li><a href="#work">My Work</a></li>
+				<li><a href="#projects">My Work</a></li>
 				<li><a href="#art">Art</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 		<div class="aboutme-container">
 				<div class="aboutme-container-box1" data-aos="fade-right">
-					<h1>About Me</h1>
+					<h1 id="about">About Me</h1>
 				</div>
 				<div class="aboutme-container-box2" data-aos="fade-left">
 					<h3> Hi! I'm Cliff, a third year Information Systems student at Atmajaya Catholic University of Indonesia. Nice to meet you!</h3>
 				</div>
 		</div>
 		<div class="whitespace"></div>	
-		<projects-container>
+		<projects-container id="projects">
 			<h1 class="center" data-aos="zoom-in">Projects</h1>
 		</projects-container>
 		<projects-container>
@@ -88,7 +88,7 @@
 						<div class="middle">
 							<a href="https://m.atmajaya.ac.id/web/Konten.aspx?gid=highlight&cid=gipeclosing">
 							<div class="text">
-									GIPE 2020 | National Commission for Research Technology and Innovation website of Namibia
+									GIPE 2020 | Namibia's National Commission for Research Science and Technology website
 							</div>
 						</a>
 						</div>
@@ -98,11 +98,21 @@
 					</p>
 				</div>
 				</div>
-				<div class="projects-container-box2" data-aos="fade-left">
-					<h2>Testing2</h2>
-					<p>bruh</p>
-				</div>
+					
 			</projects-container>
+			<div class="pixelbg">
+			<h1> DISCOUNT FLAPPY BIRD </h1>
+				<div class="flap">
+					<div class="button" id="start">Click to start!</div>
+					<div class="game-container">
+					<div class="gameText" id="point"> 0 </div>
+					<div class = "sky">
+						<div class ="bird"></div>
+					</div>
+					<div class="ground"></div>
+</div>
+</div>
+</div>
 
 <footer>
 			<a href="mailto:clifftangel@gmail.com" target="_blank"><img src="media/icons/mailicon.png" /></a>
@@ -123,6 +133,7 @@
 	<script type="text/javascript">
 		var rellax = new Rellax('.rellax');
 	</script>
+	<script language="javascript" src='js/flap.js' type="text/javascript"></script>
 	<!-- <script type="text/javascript">
 		var rellax = new Rellax('.rellax',);
 		
