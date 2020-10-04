@@ -32,16 +32,17 @@ html, body {
   position: absolute;
 }
 
-.pixelbg{
+/*.pixelbg{
   max-width: 100%;
   background: url(media/gamebg.png);
-}
+}*/
 
 
 .game-container{
-  width:500px;
+  width:100%;
   height:730px;
   position: absolute;
+  background: url(media/fb-game-background.png);
 }
 
 .borderLeft{

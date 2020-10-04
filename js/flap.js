@@ -7,7 +7,7 @@ document.getElementById("start").addEventListener("click" , () =>{
 	let birdLeft = 220
 	let birdBottom = 100
 	let gravity = 2.5
-	let isGameOver = false
+	var isGameOver = false
 	let gap = 440
 
 	function startGame(){
@@ -61,7 +61,7 @@ document.getElementById("start").addEventListener("click" , () =>{
 			}
 
 			if(	
-				obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 && (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap-200)||
+				obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 && (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap -200)||
 				birdBottom === 0){
 				gameOver()
 				clearInterval(timerId)
@@ -69,6 +69,7 @@ document.getElementById("start").addEventListener("click" , () =>{
 				clearInterval(timerId)
 				gameDisplay.removeChild(obstacle)
 				gameDisplay.removeChild(topObstacle)
+				document.getElementById("start").classList.add("button");
 			}
 			}
 		}
@@ -92,7 +93,6 @@ var myVar = setInterval(myTimer,3000);
 		document.removeEventListener('keyup', jump)
 		document.removeEventListener('click', jump)
 		clearInterval(myVar);
-		document.getElementById("start").classList.add("button");
 
 	}
 })
