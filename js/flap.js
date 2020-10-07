@@ -69,7 +69,8 @@ document.getElementById("start").addEventListener("click" , () =>{
 				clearInterval(timerId)
 				gameDisplay.removeChild(obstacle)
 				gameDisplay.removeChild(topObstacle)
-				document.getElementById("start").classList.add("button");
+				if(isGameOver = true){
+				document.getElementById("start").classList.add("button")}
 			}
 			}
 		}
