@@ -154,6 +154,7 @@ main {
 	max-width: 100px;
 	max-height: 100px;
 	object-fit: contain;
+	filter: drop-shadow(0.1em 0.1em .01em white);
 }
 
 .flexbox {
@@ -321,6 +322,7 @@ footer > a > img {
 	max-width: 100px;
 	max-height: 100px;
 	object-fit: contain;
+	filter: drop-shadow(.75em .75em .5em);
 }
 
 }
