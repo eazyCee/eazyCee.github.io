@@ -13,7 +13,7 @@
 
     -webkit-touch-callout: none;
     -khtml-user-select: none;
-    -ms-touch-action: pan-y;
+    -ms-touch-action: pan-y;    
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
@@ -25,7 +25,7 @@
     display: block;
     overflow: hidden;
 
-    margin: 0;
+    margin: 10px;
     padding: 0;
 }
 .slick-list:focus
@@ -79,8 +79,6 @@
     display: none;
     float: left;
 
-    height: 100%;
-    min-height: 1px;
 }
 [dir='rtl'] .slick-slide
 {
