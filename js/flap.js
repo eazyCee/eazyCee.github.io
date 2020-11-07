@@ -70,7 +70,8 @@ document.getElementById("start").addEventListener("click" , () =>{
 				gameDisplay.removeChild(obstacle)
 				gameDisplay.removeChild(topObstacle)
 				if(isGameOver = true){
-				document.getElementById("start").classList.add("button")}
+				document.getElementById("start").classList.add("button")
+				x}
 			}
 			}
 		}
