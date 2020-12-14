@@ -11,6 +11,7 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 50vh;
 }
 
 .test{
@@ -25,8 +26,10 @@ ul {
 	height:100vh;
 }
 
+
 .section-gray{
 	background: #FFFFFF;
+	padding-bottom: 25vh;
 }
 
 .section-black{
@@ -274,7 +277,6 @@ main {
 }
 
 .art-info p{
-	display: inline-block;
 	background:transparent;
 	color: #000000;
 	font-family: 'Montserrat', sans-serif;
@@ -566,6 +568,10 @@ position:absolute;
 
 @media(max-width: 1000px){
 
+	.padding{
+	padding-bottom: 20vh;
+}
+
 	.wrapper{
 		display: grid;
 	}
@@ -600,6 +606,8 @@ position:absolute;
 	max-width: 90%;
 	padding-left: 0px;
 }
+
+
 
 }
 
