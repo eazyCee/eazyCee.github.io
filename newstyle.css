@@ -499,22 +499,47 @@ footer > a > img {
 }
 
 .content{
+	display: block;
 	margin-left: 50px;
 	margin-right: 50px;
-
+	position: relative;
 }
+
+.button-ncrst{
+	margin-left: 40vw;
+	border:none;
+	display: block;
+	width: 225px;
+	height: 60px;
+	background-color: #ff6600;
+	text-decoration: none;
+	position: absolute;	
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size:20px;
+	line-height: 55px;
+	font-weight: lighter;
+	color:white;
+	z-index: 0;
+	cursor:pointer;
+}
+
+.button-ncrst:hover{
+	background-color:#ffffff;
+	color: #000000;
+	transition: 0.5s;
+}
+
 
 .content p{
 	font-family: 'Montserrat', sans-serif;
 	font-size:20px;
 	font-weight: lighter;
 	color:white;
+	z-index: 0;
+	text-align:justify;
 }
 
-.content a{
-	padding-left: 50%;
-	color:#ff6600;
-}
 
 
 .designs {
@@ -569,6 +594,10 @@ position:absolute;
 
 
 @media(max-width: 1000px){
+
+	.content{
+		margin-bottom: 35vh;
+	}
 
 	.padding{
 	padding-bottom: 20vh;
