@@ -408,9 +408,10 @@ main {
 
 .zoomimg{
 	background:url(media/zoom.jpg);
+ 	background-size: cover;
 }
 
-.img1, .zoomim, .img2{
+.img1, .zoomimg, .img2{
 	background-size: cover;
 	background-position: center center;
 	position: relative;
