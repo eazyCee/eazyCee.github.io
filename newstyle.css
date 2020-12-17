@@ -15,7 +15,8 @@ ul {
 }
 
 .test{
-	background:linear-gradient(to bottom right,#242424,#ff6600);;
+	background-image: url('media/background.jpg');
+	background-size: 100% 100%;
 }
 
 .fp-80{
