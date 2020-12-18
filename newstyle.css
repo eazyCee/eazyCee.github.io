@@ -1,6 +1,6 @@
 body{
 background-color:#242424;
-    margin: 0;
+    margin: 0 0		;
     height: 100%;
 }
 ul {
@@ -30,7 +30,6 @@ ul {
 
 .section-gray{
 	background: #FFFFFF;
-	padding-bottom: 25vh;
 }
 
 .section-black{
@@ -71,12 +70,8 @@ ul {
 	z-index: -1;
 }
 
-.art-fill{
-	font-family: 'Montserrat', sans-serif;
-	color:white;
-	padding: 1vh 1.2vw;
-	margin:20px;
-	font-size: 30px;
+.margin-top{
+	margin-top: 30px;
 }
 
 .about-fill{
@@ -84,13 +79,14 @@ ul {
 	color:white;
 	font-size: 30px;
 	  padding: 1vh 1.2vw;
+	 text-align: left;
 
 }
 
 .art-fill{
 	font-family: 'Montserrat', sans-serif;
 	color:black;
-	font-size: 7vh;
+	font-size: 30px;
 	  padding: 1vh 1.2vw;
 
 }
@@ -372,6 +368,7 @@ main {
 	width:100vh;
 	display:flex;
 	justify-content: space-between;
+	margin: 2vh;
 }
 
 .wrapper a{
@@ -381,14 +378,15 @@ main {
 
 .items-ncrst{
 	position:relative;
-	margin: 2vh;
+	padding-left: 2vh;
+	padding-right: 2vh;
 }	
 
 
 .items{
 	position:relative;
 	cursor: pointer;
-	margin: 2vh;
+	margin-left: 2vh;
 }	
 
 .box{
@@ -593,6 +591,28 @@ position:absolute;
 
 
 @media(max-width: 720px){
+
+.img-text{
+
+	transform: translateY(-90px);
+}
+.img1, .zoomimg, .img2{
+	transform: translateY(60px);
+}
+	.box{
+		width: 300px;
+		height:150px;
+	}
+	nav p{
+		opacity: 0.0;
+	}
+	.projects{
+		margin-top: 20vh;
+	}
+
+	.flex-info p{
+	left:10%;
+}
 	.content{
 		margin-bottom: 35vh;
 	}
@@ -635,8 +655,6 @@ position:absolute;
 	max-width: 90%;
 	padding-left: 0px;
 }
-
-
 
 }
 
@@ -714,7 +732,7 @@ font-family: 'Montserrat', sans-serif;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  font-size: clamp(2vh, 2.2vh, 2.5vh);
+  font-size: clamp(0.7rem, 2.2vh, 2.5vh);
 }
 .navTransparent > p {
   -webkit-transition-duration: 0.5s;
@@ -737,7 +755,7 @@ font-family: 'Montserrat', sans-serif;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   color: white;
-  font-size:clamp(2vh, 2.2vh, 2.5vh);
+  font-size:clamp(0.7rem, 2.2vh, 2.5vh);
 }
 .navColor > p {
   font-family: 'Montserrat', sans-serif;
