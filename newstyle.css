@@ -11,7 +11,7 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 50vh;
+	margin-bottom: 10vh;
 }
 
 .test{
@@ -395,6 +395,17 @@ main {
 	transition: .6s;
 }
 
+.wrapper hr {
+flex-basis: 100%;
+ height: 0; 
+ margin: 0; 
+ border: 0;
+}
+
+.imggit{
+	background:url(media/github.png);
+}
+
 .img1{
 	background:url(media/project1.png);
 }
@@ -403,12 +414,25 @@ main {
 	background:url(media/img2.png);
 }
 
+.img3{
+	background:url(media/bangkit_2021.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img4{
+	background:url(media/torem.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 .zoomimg{
 	background:url(media/zoom.jpg);
  	background-size: cover;
 }
 
-.img1, .zoomimg, .img2{
+.img1, .zoomimg, .img2, .img3, .img4{
 	background-size: cover;
 	background-position: center center;
 	position: relative;
@@ -424,6 +448,14 @@ main {
 }
 
 .items:hover .img2{
+	transform: translateY(0);
+}
+
+.items:hover .img3{
+	transform: translateY(0);
+}
+
+.items:hover .img4{
 	transform: translateY(0);
 }
 
