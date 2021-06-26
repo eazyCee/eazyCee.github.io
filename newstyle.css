@@ -432,7 +432,7 @@ flex-basis: 100%;
  	background-size: cover;
 }
 
-.img1, .zoomimg, .img2, .img3, .img4{
+.img1, .zoomimg, .img2, .img3, .img4,.imggit{
 	background-size: cover;
 	background-position: center center;
 	position: relative;
@@ -456,6 +456,14 @@ flex-basis: 100%;
 }
 
 .items:hover .img4{
+	transform: translateY(0);
+}
+
+.items-ncrst:hover .img4{
+	transform:translateY(0);
+}
+
+.items-ncrst:hover .imggit{
 	transform: translateY(0);
 }
 
