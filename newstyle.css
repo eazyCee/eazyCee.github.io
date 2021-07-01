@@ -421,7 +421,7 @@ flex-basis: 100%;
 }
 
 .img4{
-	background:url(media/torem.jpg);
+	background:url(media/torem.JPG);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -458,6 +458,7 @@ flex-basis: 100%;
 .items:hover .img4{
 	transform: translateY(0);
 }
+
 
 .items-ncrst:hover .img4{
 	transform:translateY(0);
