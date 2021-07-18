@@ -7,7 +7,7 @@ window.addEventListener('scroll', function(){
 	let value = window.scrollY;
 
 	wave1.style.backgroundPositionX = 400 + value*4 + 'px';
-	wave1.style.backgroundPositionX = 300 + value*-4 + 'px';
-	wave1.style.backgroundPositionX = 200 + value*2 + 'px';
-	wave1.style.backgroundPositionX = 100 + value*-2 + 'px';
+	wave2.style.backgroundPositionX = 300 + value*-4 + 'px';
+	wave3.style.backgroundPositionX = 200 + value*2 + 'px';
+	wave4.style.backgroundPositionX = 100 + value*-2 + 'px';
 })
