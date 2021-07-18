@@ -775,6 +775,13 @@ position:absolute;
 
 @media(max-width: 720px){
 
+.text-area h3{
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	font-size: 1.5vh;
+}
+
 .cont1{
 	padding-left: 30px;
 	padding-right: 30px;
